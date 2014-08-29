@@ -1,0 +1,30 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+ul {
+	display: block;
+	list-style-type: disc;
+	padding-left: 0px;
+	margin: 5px;
+}
+ul li {
+	display: list-item;
+	font-size: 20px;
+	font-weight: bold;
+	list-style-type: none;
+	box-sizing: border-box;
+	background: #00CC00;
+	border: 1px solid #009900;
+	border-radius: 2px;
+	color: #004400;
+	margin: 5px 0;
+	padding: 10px 15px;
+	width: 250px;
+	position: relative;
+	user-select: none;
+}
+li:active {
+	color: green;
+}

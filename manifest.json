@@ -1,0 +1,23 @@
+{
+  "name": "Alpha Youtube Downloader",
+  "version": "1.0",
+  "description": "Download Youtube Videos, Simple Way.",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action" :
+  {
+    "default_icon" : "icon-19.png",
+    "default_title" : "Download Video",
+    "default_popup" : "popup.html"
+  },
+  "permissions" : [
+    "declarativeContent"
+  ],
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "manifest_version": 2
+}
