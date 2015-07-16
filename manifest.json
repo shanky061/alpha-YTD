@@ -13,7 +13,9 @@
     "default_popup" : "popup.html"
   },
   "permissions" : [
-    "declarativeContent"
+    "declarativeContent",
+	"http://*/*",
+	"activeTab"
   ],
   "icons" : {
     "48" : "icon-48.png",

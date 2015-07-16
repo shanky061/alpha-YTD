@@ -1,3 +1,8 @@
+/*
+ * File : background.js
+ *
+ * It will run once when the extension is installed/upgraded.
+ */
 
 // When the extension is installed or upgraded ...
 chrome.runtime.onInstalled.addListener(function() {
@@ -6,10 +11,11 @@ chrome.runtime.onInstalled.addListener(function() {
     // With a new rule ...
     chrome.declarativeContent.onPageChanged.addRules([
       {
-        // That fires when a page's URL contains a 'g' ...
         conditions: [
           new chrome.declarativeContent.PageStateMatcher({
-            pageUrl: { urlContains: 'www.youtube.com/watch?v=' },
+			  // Show our extension's icon in locationbar
+			  // if 'urlContains' pattern matches current URL
+			  pageUrl: { urlContains: 'youtube.com/watch?v=' },
           })
         ],
         // And shows the extension's page action.
